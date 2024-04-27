@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <title>Pastelaria do Seu Zé</title>
+   
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+
+     
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <header>
+            <nav
+                class="navbar navbar-expand-sm navbar-dark bg-dark"
+            >
+                <div class="container">
+                    <a class="navbar-brand" href="#">Pastelaria do Seu Zé</a>
+                    <button
+                        class="navbar-toggler d-lg-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <aclass="nav-link active" href="#" aria-current="page"
+                                    >Início
+                                    <span class="visually-hidden">(current)</span></a
+                                >
+                            </li>
+                            <li  class="nav-item">
+                                <a onclick="scrollToSection('cardapio')" class="nav-link" href="javascript:void(0);">Cardápio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="scrollToSection('sobre-nos')" class="nav-link" href="javascript:void(0);">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a onclick="scrollToSection('contato')" class="nav-link" href="javascript:void(0);">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container p-3">
+                <div class="row ">               
+                    <div class = "col-12 d-flex justify-content-center">
+                        <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
+                            <ol class="carousel-indicators list-unstyled">
+                                <li
+                                    data-bs-target="#carouselId"
+                                    data-bs-slide-to="0"
+                                    class="active"
+                                    aria-current="true"
+                                    aria-label="First slide"
+                                ></li>
+                                <li
+                                    data-bs-target="#carouselId"
+                                    data-bs-slide-to="1"
+                                    aria-label="Second slide"
+                                ></li>
+                                <li
+                                    data-bs-target="#carouselId"
+                                    data-bs-slide-to="2"
+                                    aria-label="Third slide"
+                                ></li>
+                            </ol>
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
+                                    <img
+                                        src="./imgs/pastel (1).jpg"
+                                        class="w-100 d-block"
+                                        alt="First slide"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./imgs/caldo de cana.jpg"
+                                        class="w-100 d-block"
+                                        alt="Second slide"
+                                    />
+                                </div>
+                                <div class="carousel-item">
+                                    <img
+                                        src="./imgs/coca-cola (1).jpg"
+                                        class="w-100 d-block"
+                                        alt="Third slide"
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselId"
+                                data-bs-slide="prev"
+                            >
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselId"
+                                data-bs-slide="next"
+                            >
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="container p-5 mb-4 border-bottom" id="cardapio">
+                <div class="row text-center">
+                    <div class="col p-3">
+                        <h2>Cardápio</h2>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <div class="card" style="width: 18rem; height: 23rem;">
+                            <img src="/imgs/pastel de queijo.jpg" class="card-img-top" alt="foto pastel de queijo">
+                            <div class="card-body">
+                              <h5 class="card-title">Pastel de Queijo</h5>
+                              <p class="card-text">Pastel de queijo crocante e dourado, recheado com uma generosa porção de queijo derretido e cremoso.</p>
+                              <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <div class="card" style="width: 18rem; height: 23rem;">
+                            <img src="/imgs/pastel de carne.jpg" class="card-img-top" alt="foto pastel de carne">
+                            <div class="card-body">
+                              <h5 class="card-title">Pastel de Carne</h5>
+                              <p class="card-text">Pastel de carne suculento e dourado, envolvendo um recheio generoso de carne moída temperada.</p>
+                              <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 col-lg-3">
+                        <div class="card" style="width: 18rem; height: 23rem;">
+                            <img src="/imgs/pastel de calabreza.jpg" class="card-img-top" alt="foto pastel de calabresa">
+                            <div class="card-body">
+                              <h5 class="card-title">Pastel de Calabreza</h5>
+                              <p class="card-text"> Um pastel de calabresa crocante e deliciosamente recheado, com o sabor intenso e picante da calabresa defumada.</p>
+                              <a href="#" class="btn btn-primary btn-block">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="container p-3" id="sobre-nos">
+                <div class="row text-center">
+                    <div class="col p-3">
+                        <h2>Sobre nós</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col" style="font-size: large;">
+                        <p >Na Pastelaria do Seu Zé, nossa paixão é transformar ingredientes frescos em deliciosos pastéis que encantam paladares. Com décadas de tradição e amor pela culinária, cada pastel é uma      experiência única, feita com carinho e dedicação para você saborear momentos especiais.
+                        
+                        <p>Fundada pelo simpático e talentoso Seu Zé, nossa pastelaria nasceu de uma tradição familiar de gerações, onde o segredo das receitas passava de pai para filho. Seu Zé, com sua habilidade única de unir sabores autênticos e criar combinações inovadoras, logo conquistou o coração e o paladar de toda a vizinhança.</p>
+
+                        <p>O pequeno carrinho de pastéis que Seu Zé empurrava pelas ruas, exalando aromas irresistíveis, transformou-se em um ponto de encontro querido por todos, onde histórias eram compartilhadas e sorrisos eram garantidos. Com o tempo, a demanda cresceu, e a modesta barraca se tornou a Pastelaria do Seu Zé, um espaço acolhedor onde cada pastel conta não apenas uma história de sabor, mas também de tradição e afeto.</p>
+                    </div>
+                        
+                </div>
+            </div>
+
+            <div class="container pb-5 border-bottom">
+                <div class="row ">
+                    <div class="col text-center"> 
+                        <img src="./imgs/pastelaria.jpg" alt="foto-pastelaria"> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-5 " id="contato">
+                <div class="row mb-4">
+                    <div class="col-12 text-center">
+                        <h1>Contato</h1>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div id="contact-left" class="d-flex flex-column gap-3 p-3">
+                            <h2 class="fw-bold">Formulário de Contato</h2>
+                            <form id="contact-form">
+                                <fieldset class="mb-3">
+                                    <legend class="form-label mb-1 fw-bold">Nome</legend>
+                                    <input type="text" id="name" class="form-control" placeholder="Digite o seu nome completo" required>
+                                </fieldset>
+                                <fieldset class="mb-3">
+                                    <legend class="form-label mb-1 fw-bold">E-mail</legend>
+                                    <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu e-mail" required />
+                                </fieldset>
+                                <button type="button" class="btn btn-primary" onclick="sendMe()">Avise-me</button>
+                            </form>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-6 text-center">
+                        <div id="contact-right" class="p-3" style="font-size: 1.5rem;">
+                            <h2 class="fw-bold" >Informações de Contato</h2>
+                            <p class="fw-normal">Endereço: Rua da Pastelaria do Seu Zé, 123</p>
+                            <p class="fw-normal">Telefone: (00) 99999-9999</p>
+                            <p class="fw-normal">E-mail: contato@pastelariadoseuze.com.br</p>
+                            <p class="fw-normal">Horário de Funcionamento:</p>
+                            <ul class="list-unstyled">
+                                <li>Segunda a Sexta: 10:00 - 20:00</li>
+                                <li>Sábado: 10:00 - 18:00</li>
+                                <li>Domingo: Fechado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer>
+            <div class="text-center p-3 bg-dark text-light">
+                &copy; 2024 Pastelaria do Seu Zé. Todos os direitos reservados.
+            </div>
+        </footer>
+      
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+            crossorigin="anonymous"
+        ></script>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+            integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+            crossorigin="anonymous"
+        ></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
